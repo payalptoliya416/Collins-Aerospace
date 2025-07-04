@@ -153,7 +153,8 @@ body {
   padding: 5px 12px;
   border-radius: 10px;
   color: white;
-  background-color: #e6a6a6;
+  background-color: var(--red-color);
+  opacity: 0.6;
   border: none;
   display: flex;
   align-items: center;
@@ -393,6 +394,7 @@ body {
   border-radius: 10px;
   margin: 40px 0;
   position: relative;
+  background-color: var(--white-color);
 }
 .regisration-info .form-data {
   padding: 0 20px 20px;
@@ -476,12 +478,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.colli-home .container {
-  height: 75dvh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 .attendee-logo .year::after {
   right: -27%;
 }
