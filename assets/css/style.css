@@ -1,0 +1,599 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  font-family: "MyriadPro", sans-serif;
+}
+:root {
+  --text-color: #221e20;
+  --red-color: #c7242e;
+  --white-color: #ffffff;
+  --gray-color: #e5e5e5;
+  --red-light: #c7242e;
+}
+
+/* ----main--start-- */
+.maindiv {
+  width: 100%;
+  min-height: 100dvh;
+  margin: auto;
+  max-width: 768px;
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  max-width: 700px !important;
+  padding: 0 20px;
+  margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 490px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+/* ----main--end-- */
+
+/* --colli-home--start */
+.colli-admin {
+  position: relative;
+}
+.colli-home-info {
+  margin: 50px 0;
+}
+.year {
+  position: relative;
+}
+.year {
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: right;
+  margin-bottom: 0;
+  color: var(--text-color);
+}
+.year::after {
+  position: absolute;
+  content: "";
+  background-color: var(--red-color);
+  width: 4px;
+  height: 91%;
+  right: -20%;
+  top: 0px;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  color: var(--text-color);
+}
+
+.small-text {
+  font-size: 30px;
+  line-height: 24px;
+  color: var(--text-color);
+  margin-bottom: 7px;
+  letter-spacing: 1px;
+}
+
+.large-text {
+  font-size: 54px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: 1px;
+}
+.colli-home-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.colli-btn-grp {
+  display: flex;
+  gap: 10px;
+  margin: 40px 0;
+}
+
+.colli-btn-grp a {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.colli-btn-grp .first-btn {
+  background-color: var(--red-color);
+  color: white;
+  border: 2px solid var(--red-color);
+}
+
+.colli-btn-grp .sec-btn {
+  background-color: var(--white-color);
+  color: var(--red-color);
+  border: 2px solid var(--red-color);
+}
+
+.colli-btn-grp a:hover {
+  opacity: 0.85;
+}
+
+.colli-admin {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 5px 12px;
+  border-radius: 10px;
+  color: white;
+  background-color: #e6a6a6;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  cursor: default;
+}
+
+.colli-admin img {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 640px) {
+  .year {
+    font-size: 64px;
+  }
+  .small-text {
+    font-size: 22px;
+  }
+  .large-text {
+    font-size: 40px;
+  }
+  .year::after {
+    right: -24%;
+  }
+  .colli-home-info {
+    margin: 50px 0 30px;
+  }
+}
+
+@media (max-width: 490px) {
+  .year {
+    font-size: 50px;
+  }
+  .small-text {
+    font-size: 18px;
+    margin-bottom: 1px;
+  }
+  .large-text {
+    font-size: 32px;
+  }
+  .colli-btn-grp a {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+  .year::after {
+    right: -33%;
+    width: 3px;
+  }
+}
+@media (max-width: 390px) {
+  .colli-btn-grp a {
+    font-size: 12px;
+  }
+  .year {
+    font-size: 43px;
+  }
+  .small-text {
+    font-size: 14px;
+  }
+  .large-text {
+    font-size: 24px;
+  }
+  .year::after {
+    right: -36%;
+  }
+}
+@media (max-width: 375px) {
+  .colli-btn-grp a {
+    padding: 10px 5px;
+  }
+}
+/* --colli-home--end */
+
+/* ---search-sec--start */
+.bg-image {
+  height: 100dvh;
+  width: 100%;
+  background-image: url("../images/BG_Design.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.search-info {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+  border-radius: 10px;
+  margin: 40px 0;
+  position: relative;
+}
+.close-icon {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  cursor: pointer;
+}
+.close-icon img {
+  width: 100%;
+  max-width: 18px;
+}
+.search-title {
+  text-align: center;
+  color: var(--red-color);
+  font-size: 24px;
+  line-height: 24px;
+  padding: 30px 20px;
+  margin-bottom: 0;
+}
+.search-input {
+  padding: 0 20px 20px;
+  position: relative;
+}
+
+.close-search img {
+  width: 100%;
+  max-width: 18px;
+}
+.close-search {
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  cursor: pointer;
+}
+.search-input .form-control {
+  border-radius: 20px;
+  background-color: var(--gray-color);
+  line-height: 18px;
+  font-size: 16px;
+}
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: none;
+  outline: none;
+  border-color: transparent;
+}
+.search-listbar {
+  background-color: var(--gray-color);
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.search-list {
+  background-color: var(--white-color);
+  border-radius: 10px;
+  padding: 12px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.search-list::-webkit-scrollbar {
+  width: 4px;
+}
+.search-list::-webkit-scrollbar-thumb {
+  background-color: #c4c4c4;
+  border-radius: 10px;
+}
+.search-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.search-list li a {
+  padding: 10px;
+  border-bottom: 1px solid var(--gray-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.search-list li a:last-child {
+  margin-bottom: 0;
+}
+.search-list li h3 {
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+.search-list li h4 {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: end;
+  margin-bottom: 4px;
+}
+.search-list li p {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 0;
+  color: var(--red-color);
+  text-align: end;
+}
+@media (max-width: 640px) {
+  .close-search {
+    right: 6%;
+  }
+}
+
+@media (max-width: 490px) {
+  .search-list li h3 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .search-list li h4 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .search-title {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 30px 20px 24px;
+  }
+  .search-list li p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .close-search {
+    right: 7%;
+  }
+  .form-data .form-label,
+  .form-check-label {
+    font-size: 14px;
+  }
+}
+@media (max-width: 390px) {
+  .search-list li h3 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .search-list li h4 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .close-search {
+    right: 9%;
+  }
+}
+/* ---search-sec--end */
+
+/* --regisration-info--start */
+.regisration-info {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+  border-radius: 10px;
+  margin: 40px 0;
+  position: relative;
+}
+.regisration-info .form-data {
+  padding: 0 20px 20px;
+}
+.form-para p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 0px;
+}
+.form-para p:first-child {
+  color: var(--red-color);
+}
+.form-data .form-control {
+  padding: 4px 12px;
+}
+.form-data .form-label {
+  margin-bottom: 0;
+}
+.submit-btn {
+  text-align: center;
+}
+.submit-btn a {
+  background-color: var(--red-light);
+  color: white;
+  padding: 12px 50px;
+  border-radius: 7px;
+}
+/* --regisration-info--end */
+
+/* ---attendee-logo--start */
+.attendee-logo .colli-home-info {
+  justify-content: center;
+}
+.attendee-logo .year {
+  font-size: 60px;
+}
+.attendee-logo .small-text {
+  font-size: 22px;
+}
+.attendee-logo .large-text {
+  font-size: 37px;
+}
+.attendee-info {
+  text-align: center;
+}
+.attendee-info h3 {
+  font-size: 24px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.attendee-info h1 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 54px;
+  margin-bottom: 5px;
+}
+.attendee-info p {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+.attendee-info h2 {
+  position: relative;
+  color: var(--red-color);
+  font-size: 26px;
+  line-height: 28px;
+  display: inline-block;
+}
+.attendee-info h2:after {
+  position: absolute;
+  content: "";
+  background-color: var(--red-color);
+  width: 100%;
+  height: 2px;
+  bottom: -2%;
+  left: 0;
+}
+.attend-type-sec .container {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.attendee-logo .year::after {
+  right: -27%;
+}
+@media (max-width: 575px) {
+  .attendee-logo .year::after {
+    right: -31%;
+  }
+  .attendee-logo .year {
+    font-size: 47px;
+    margin-bottom: 0;
+  }
+  .attendee-logo .small-text {
+    font-size: 16px;
+  }
+  .attendee-logo .large-text {
+    font-size: 26px;
+  }
+  .attendee-logo .colli-home-info {
+    gap: 26px;
+  }
+}
+@media (max-width: 490px) {
+  .attendee-info h1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .attendee-info h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .attendee-info h2 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 490px) {
+  .attendee-logo .year {
+    font-size: 39px;
+  }
+  .attendee-logo .small-text {
+    font-size: 14px;
+  }
+  .attendee-logo .large-text {
+    font-size: 22px;
+  }
+  .attendee-logo .year::after {
+    right: -37%;
+  }
+}
+/* ---attendee-logo--end */
+
+/* --success-info--start */
+
+.success-info {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+  border-radius: 10px;
+  margin: 50px auto 60px;
+  text-align: center;
+  padding: 28px;
+  width: 100%;
+  max-width: 350px;
+}
+.success-info img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+.success-info p {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+.success-info h3 {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+@media (max-width: 640px) {
+  .success-info img {
+    max-width: 150px;
+  }
+  .success-info {
+    max-width: 300px;
+  }
+}
+@media (max-width: 490px) {
+  .success-info {
+    max-width: 278px;
+  }
+}
+@media (max-width: 575px) {
+  .success-info {
+    max-width: 278px;
+  }
+  .success-info img {
+    max-width: 134px;
+  }
+  .success-info h3 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .success-info p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 490px) {
+  .success-info {
+    max-width: 239px;
+  }
+  .success-info img {
+    max-width: 107px;
+  }
+  .success-info {
+    padding: 26px 20px;
+  }
+}
+/* --success-info--end */
