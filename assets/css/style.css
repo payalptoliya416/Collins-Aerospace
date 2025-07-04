@@ -289,6 +289,9 @@ body {
   outline: none;
   border-color: transparent;
 }
+.form-check{
+  cursor: pointer;
+}
 .search-listbar {
   background-color: var(--gray-color);
   border-radius: 10px;
