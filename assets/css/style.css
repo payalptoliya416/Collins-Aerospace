@@ -477,7 +477,7 @@ body {
   justify-content: space-between;
 }
 .colli-home .container {
-  height: 60dvh;
+  height: 80dvh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
