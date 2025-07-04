@@ -476,6 +476,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.colli-home .container {
+  height: 60dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .attendee-logo .year::after {
   right: -27%;
 }
