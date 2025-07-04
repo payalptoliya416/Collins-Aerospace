@@ -415,6 +415,7 @@ body {
 }
 .submit-btn {
   text-align: center;
+  margin-bottom: 30px;
 }
 .submit-btn a {
   background-color: var(--red-light);
