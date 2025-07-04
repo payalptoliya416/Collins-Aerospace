@@ -100,7 +100,7 @@ body {
   color: var(--text-color);
   margin-bottom: 7px;
   letter-spacing: 1px;
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .large-text {
@@ -290,7 +290,7 @@ body {
   outline: none;
   border-color: transparent;
 }
-.form-check{
+.form-check {
   cursor: pointer;
 }
 .search-listbar {
@@ -349,7 +349,7 @@ body {
   .close-search {
     right: 6%;
   }
-  .search-listbar{
+  .search-listbar {
     padding: 18px 14px;
   }
 }
