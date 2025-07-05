@@ -63,14 +63,20 @@ body {
 .colli-admin {
   position: relative;
 }
+.colli-home .container{
+  height: 90dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .colli-home-info {
-  margin: 50px 0;
+  margin: 50px 0 30px;
 }
 .year {
   position: relative;
 }
 .year {
-  font-size: 80px;
+  font-size: 58px;
   font-weight: 400;
   line-height: 1;
   text-align: right;
@@ -95,7 +101,7 @@ body {
 }
 
 .small-text {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 24px;
   color: var(--text-color);
   margin-bottom: 7px;
@@ -104,11 +110,12 @@ body {
 }
 
 .large-text {
-  font-size: 54px;
+  font-size: 36px;
   font-weight: 500;
   color: #000;
   letter-spacing: 1px;
 }
+
 .colli-home-info {
   display: flex;
   align-items: flex-start;
@@ -185,7 +192,7 @@ body {
     right: -24%;
   }
   .colli-home-info {
-    margin: 50px 0 30px;
+    margin: 50px 0 26px;
   }
 }
 
@@ -273,6 +280,7 @@ body {
   max-width: 18px;
 }
 .close-search {
+    display: none;
   position: absolute;
   top: 8%;
   right: 5%;
