@@ -296,7 +296,6 @@ body {
 .form-check-input:focus {
   box-shadow: none;
   outline: none;
-  border-color: transparent;
 }
 .form-check {
   cursor: pointer;
